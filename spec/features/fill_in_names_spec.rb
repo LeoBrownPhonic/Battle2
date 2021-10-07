@@ -4,6 +4,6 @@ feature "form" do
     fill_in("player_1", with: "John Doe")
     fill_in("player_2", with: "Jane Doe")
     click_button "Submit"
-    expect(page).to have_content "John Doe"
+    expect(page).to have_content "John Doe" && "Jane Doe"
   end
 end
